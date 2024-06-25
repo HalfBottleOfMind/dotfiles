@@ -179,6 +179,8 @@ if [ -f '/home/hbom/ydb/path.bash.inc' ]; then source '/home/hbom/ydb/path.bash.
 export PATH="$HOME/.tmuxifier/bin:$PATH"
 eval "$(tmuxifier init -)"
 
+eval "$(zoxide init zsh --cmd j)"
+
 # if command -v tmux &> /dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] && [[ ! "$TERM" =~ tmux ]] && [ -z "$TMUX" ]; then
 # 	exec tmux new-session -A -s default
 # fi
