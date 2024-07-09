@@ -44,6 +44,7 @@ config.lua_ls = {
 
 config.intelephense = {}
 config.phpactor = {}
+config.vue_language_server = {}
 
 config.clangd = {
 }

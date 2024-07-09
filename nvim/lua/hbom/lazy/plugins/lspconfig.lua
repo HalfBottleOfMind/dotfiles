@@ -19,6 +19,15 @@ return {
 			lspconfig[lsp].setup(config[lsp])
 		end
 
+		lspconfig.volar.setup {
+			filetypes = { 'vue' },
+			init_options = {
+				vue = {
+					hybridMode = false,
+				},
+			},
+		}
+
 		vim.api.nvim_create_autocmd('LspAttach', {
 			group = vim.api.nvim_create_augroup('UserLspConfig', {}),
 			callback = function(ev)
