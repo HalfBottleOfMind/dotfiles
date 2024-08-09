@@ -1,6 +1,8 @@
 return {
 	'hrsh7th/nvim-cmp',
 	dependencies = {
+		'luckasRanarison/tailwind-tools.nvim',
+		'onsails/lspkind-nvim',
 		'hrsh7th/cmp-vsnip',
 		'hrsh7th/vim-vsnip',
 	},
@@ -19,9 +21,15 @@ return {
 			}),
 			sources = cmp.config.sources({
 				{ name = 'nvim_lsp' },
-		}, {
-			{ name = 'buffer' },
-			})
+				{ name = 'luckasRanarison/tailwind-tools.nvim' },
+			}, {
+				{ name = 'buffer' },
+			}),
+			formatting = {
+				format = require('lspkind').cmp_format({
+					before = require('tailwind-tools.cmp').lspkind_format
+				}),
+			},
 		})
 
 		cmp.setup.filetype({ 'sql' }, {

@@ -145,7 +145,9 @@ alias c="clear"
 
 export EDITOR=nvim
 export PATH=$PATH:/usr/local/go/bin
-export PATH="$GOPATH/bin:$PATH"
+export PATH=$PATH:/home/hbom/go/bin
+# export GOPATH="${HOME}/go"
+# export PATH="$GOPATH/bin"
 export PATH="${PATH}:${HOME}/.krew/bin"
 export PATH=$HOME/.local/bin:$PATH
 #export BROWSER=wslview
@@ -184,4 +186,3 @@ eval "$(zoxide init zsh --cmd j)"
 # if command -v tmux &> /dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] && [[ ! "$TERM" =~ tmux ]] && [ -z "$TMUX" ]; then
 # 	exec tmux new-session -A -s default
 # fi
-

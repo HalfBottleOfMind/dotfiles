@@ -20,13 +20,16 @@ return {
 		end
 
 		lspconfig.volar.setup {
-			filetypes = { 'vue' },
+			filetypes = { 'vue', 'javascript', 'typescript' },
 			init_options = {
 				vue = {
 					hybridMode = false,
 				},
 			},
 		}
+
+		lspconfig.dockerls.setup {}
+		lspconfig.tailwindcss.setup {}
 
 		vim.api.nvim_create_autocmd('LspAttach', {
 			group = vim.api.nvim_create_augroup('UserLspConfig', {}),
