@@ -13,7 +13,7 @@ return {
 				},
 			},
 			options = {
-				theme = 'auto',
+				theme = 'rose-pine',
 			},
 		}
 		-- require('transparent').clear_prefix('lualine')
