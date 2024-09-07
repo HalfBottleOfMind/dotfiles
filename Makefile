@@ -10,3 +10,6 @@ link-zsh:
 link-hypr:
 	mv ~/.config/hypr ~/.config/hypr-backup
 	ln -s "$(pwd)/hypr" ~/.config/hypr
+
+tmux-install:
+	./scripts/tmux-install.sh
