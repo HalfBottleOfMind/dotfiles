@@ -45,7 +45,9 @@ typewritten:
 	npm install -g typewritten
 
 zoxide:
-	curl -sSfL https://raw.githubusercontent.com/ajeetdsouza/zoxide/main/install.sh | sh
+	git clone https://github.com/reobin/typewritten.git ~/.oh-my-zsh/custom/themes/typewritten
+	ln -s "~/.oh-my-zsh/custom/themes/typewritten/typewritten.zsh-theme" "~/.oh-my-zsh/custom/themes/typewritten.zsh-theme"
+	ln -s "~/.oh-my-zsh/custom/themes/typewritten/async.zsh" "~/.oh-my-zsh/custom/themes/async"
 
 omz:
 	sh -c "$(shell curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
