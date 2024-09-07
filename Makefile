@@ -47,6 +47,9 @@ typewritten:
 zoxide:
 	curl -sSfL https://raw.githubusercontent.com/ajeetdsouza/zoxide/main/install.sh | sh
 
+brew:
+	/bin/bash -c "$(shell curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
 omz:
 	sh -c "$(shell curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
@@ -57,5 +60,6 @@ omz-plugins:
 	yay -S zsh-syntax-highlighting
 	git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
 	ln -s "$(shell pwd)/oh-my-zsh/hbom-custom" ~/.oh-my-zsh/custom/plugins/hbom-custom
+	ln -s "$(shell pwd)/oh-my-zsh/theme.zsh" ~/.oh-my-zsh/custom/plugins/catppuccin_latte-zsh-syntax-highlighting.zsh
 	curl -sSL https://storage.yandexcloud.net/yandexcloud-yc/install.sh | bash
 	git clone https://github.com/jimeh/tmuxifier.git ~/.tmuxifier
