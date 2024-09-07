@@ -24,4 +24,4 @@ lazygit:
 	sudo pacman -S lazygit
 
 chrome:
-	sudo yay -S google-chrome
+	yay -S google-chrome
