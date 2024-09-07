@@ -38,4 +38,4 @@ zsh:
 	yay -S zsh
 
 omz:
-	sh -c "$(shell wget https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"
+	sh -c "$(shell curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
