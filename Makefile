@@ -25,3 +25,8 @@ lazygit:
 
 chrome:
 	yay -S google-chrome
+
+jb-font:
+	wget https://github.com/ryanoasis/nerd-fonts/releases/download/v3.2.1/JetBrainsMono.zip
+	unzip JetBrainsMono.zip -d ~/.fonts
+	fc-cache -f -v
