@@ -34,5 +34,8 @@ jb-font: unzip
 	unzip JetBrainsMono.zip -d ~/.fonts
 	fc-cache -f -v
 
+zsh:
+	yay -S zsh
+
 omz:
 	sh -c "$(shell wget https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"
