@@ -19,3 +19,6 @@ tmux-install:
 
 tmux-link-theme:
 	ln -s "$(shell pwd)/tmux/catppuccin_hbom.tmuxtheme" ~/.tmux/plugins/tmux/themes/catppuccin_hbom.tmuxtheme
+
+lazygit:
+	sudo pacman -S lazygit
