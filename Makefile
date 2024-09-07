@@ -55,6 +55,7 @@ omz-plugins:
 	git clone https://github.com/djui/alias-tips.git ~/.oh-my-zsh/custom/plugins/alias-tips
 	git clone https://github.com/zsh-users/zsh-completions ~/.oh-my-zsh/custom/plugins/zsh-completions
 	yay -S zsh-syntax-highlighting
+	git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
 	ln -s "$(shell pwd)/oh-my-zsh/hbom-custom" ~/.oh-my-zsh/custom/plugins/hbom-custom
 	curl -sSL https://storage.yandexcloud.net/yandexcloud-yc/install.sh | bash
 	git clone https://github.com/jimeh/tmuxifier.git ~/.tmuxifier
