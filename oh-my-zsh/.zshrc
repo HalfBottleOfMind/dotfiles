@@ -13,7 +13,7 @@ export ZSH="$HOME/.oh-my-zsh"
 source ~/.oh-my-zsh/catppuccin_latte-zsh-syntax-highlighting.zsh
 
 # Next variables only for typewritten theme
-ZSH_THEME="typewritten"
+ZSH_THEME="typewritten/typewritten"
 export TYPEWRITTEN_PROMPT_LAYOUT="pure_verbose"
 export TYPEWRITTEN_SYMBOL="$"
 export TYPEWRITTEN_RELATIVE_PATH="adaptive"
