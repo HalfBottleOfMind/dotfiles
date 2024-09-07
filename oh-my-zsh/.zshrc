@@ -165,18 +165,6 @@ eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
 
-# The next line updates PATH for Yandex Cloud CLI.
-if [ -f '/home/hbom/yandex-cloud/path.bash.inc' ]; then source '/home/hbom/yandex-cloud/path.bash.inc'; fi
-
-# The next line enables shell command completion for yc.
-if [ -f '/home/hbom/yandex-cloud/completion.zsh.inc' ]; then source '/home/hbom/yandex-cloud/completion.zsh.inc'; fi
-
-export SERVICE_ACCOUNT_ID=ajefifd012dmvr5ub9q6
-export FOLDER_ID=$(yc config get folder-id)
-
-# The next line updates PATH for Yandex Cloud YDB CLI.
-if [ -f '/home/hbom/ydb/path.bash.inc' ]; then source '/home/hbom/ydb/path.bash.inc'; fi
-
 # tmuxifier
 export PATH="$HOME/.tmuxifier/bin:$PATH"
 eval "$(tmuxifier init -)"
