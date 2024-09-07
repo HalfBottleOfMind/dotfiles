@@ -22,3 +22,6 @@ tmux-link-theme:
 
 lazygit:
 	sudo pacman -S lazygit
+
+chrome:
+	sudo yay -S google-chrome
