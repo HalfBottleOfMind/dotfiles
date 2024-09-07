@@ -33,3 +33,6 @@ jb-font: unzip
 	wget https://github.com/ryanoasis/nerd-fonts/releases/download/v3.2.1/JetBrainsMono.zip
 	unzip JetBrainsMono.zip -d ~/.fonts
 	fc-cache -f -v
+
+omz:
+	sh -c "$(wget https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"
