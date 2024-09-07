@@ -9,7 +9,10 @@ link-zsh:
 
 link-hypr:
 	mv ~/.config/hypr ~/.config/hypr-backup
-	ln -s "$(pwd)/hypr" ~/.config/hypr
+	ln -s "$(shell pwd)/hypr" ~/.config/hypr
 
 tmux-install:
 	./scripts/tmux-install.sh
+
+tmux-link-theme:
+	ln -s "$(shell pwd)/tmux/catppuccin_hbom.tmuxtheme" ~/.tmux/plugins/tmux/themes/catppuccin_hbom.tmuxtheme
