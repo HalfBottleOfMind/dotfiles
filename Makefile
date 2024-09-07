@@ -35,4 +35,4 @@ jb-font: unzip
 	fc-cache -f -v
 
 omz:
-	sh -c "$(wget https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"
+	sh -c "$(shell wget https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"
