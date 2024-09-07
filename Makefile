@@ -39,9 +39,13 @@ zsh:
 
 npm:
 	yay -S npm
+	sudo chown -R $(shell whoami): /usr/lib/node_modules
 
 omz:
 	sh -c "$(shell curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
+typewritten:
+	npm install -g typewritten
 
 omz-plugins:
 	git clone https://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions
@@ -49,6 +53,5 @@ omz-plugins:
 	git clone https://github.com/zsh-users/zsh-completions ~/.oh-my-zsh/custom/plugins/zsh-completions
 	yay -S zsh-syntax-highlighting
 	ln -s "$(shell pwd)/oh-my-zsh/hbom-custom" ~/.oh-my-zsh/custom/plugins/hbom-custom
-	npm install -g typewritten
 	curl -sSL https://storage.yandexcloud.net/yandexcloud-yc/install.sh | bash
 	git clone https://github.com/jimeh/tmuxifier.git ~/.tmuxifier
