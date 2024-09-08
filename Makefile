@@ -14,6 +14,12 @@ backup-kitty:
 link-kitty: backup-kitty
 	ln -s "$(shell pwd)/kitty" ~/.config/kitty
 
+neovim-install:
+	curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim-linux64.tar.gz
+	sudo rm -rf /opt/nvim
+	sudo tar -C /opt -xzf nvim-linux64.tar.gz
+	rm nvim-linux64.tar.gz
+
 tmux-install:
 	./scripts/tmux-install.sh
 
@@ -63,3 +69,4 @@ omz-plugins:
 	ln -s "$(shell pwd)/oh-my-zsh/theme.zsh" ~/.oh-my-zsh/catppuccin_latte-zsh-syntax-highlighting.zsh
 	curl -sSL https://storage.yandexcloud.net/yandexcloud-yc/install.sh | bash
 	git clone https://github.com/jimeh/tmuxifier.git ~/.tmuxifier
+
