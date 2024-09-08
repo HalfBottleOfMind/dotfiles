@@ -144,6 +144,7 @@ alias q="exit"
 alias c="clear"
 
 export EDITOR=nvim
+export PATH=$PATH:/opt/nvim-linux64/bin
 export PATH=$PATH:/usr/local/go/bin
 export PATH=$PATH:/home/hbom/go/bin
 # export GOPATH="${HOME}/go"
