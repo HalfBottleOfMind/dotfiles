@@ -23,6 +23,9 @@ neovim-install:
 waybar-install:
 	./scripts/waybar.sh
 
+hyprpaper-install:
+	./scripts/hyprpaper.sh
+
 tmux-install:
 	./scripts/tmux-install.sh
 

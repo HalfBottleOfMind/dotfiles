@@ -24,11 +24,21 @@
         "format": "  {}%",
     },
     "battery": {
-        "format": "{capacity}% {time}",
-        "format-icons": ["", "", "", "", ""]
+        "interval": 15,
+        "format": "{capacity}% {icon} {time}",
+        "format-icons": ["", "", "", "", ""],
+        "states": {
+            "warning": 30,
+            "critical": 15
+        }
     },
     "clock": {
         "format": "{:%a, %d. %b  %H:%M}"
+    },
+    "hyprland/window": {
+        "rewrite": {
+            "(.*) - Google Chrome": "Browser"
+        }
     },
     "hyprland/language": {
         "format-en": "en",
