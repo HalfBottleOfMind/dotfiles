@@ -10,7 +10,7 @@
         "cpu",
         "memory",
         // "bluetooth",
-        // "network",
+        "network",
         "hyprland/language",
         "battery",
         "clock"
@@ -21,7 +21,12 @@
     },
     "memory": {
         "interval": 1,
-        "format": "  {}%",
+        "format": "  {}%",
+    },
+    "network": {
+        "tooltip": false,
+        "format-wifi": "  {essid}",
+        "format-ethernet": ""
     },
     "battery": {
         "interval": 15,
@@ -43,5 +48,19 @@
     "hyprland/language": {
         "format-en": "en",
         "format-ru": "ru"
+    },
+    "hyprland/workspaces": {
+        "format": "{icon}",
+        "format-icons": {
+            "active": "",
+            "default": ""
+        },
+        "persistent-workspaces": {
+            "*": [
+                1,
+                2,
+                3
+            ]
+        }
     }
 }

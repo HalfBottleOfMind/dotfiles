@@ -14,6 +14,10 @@ backup-kitty:
 link-kitty: backup-kitty
 	ln -s "$(shell pwd)/kitty" ~/.config/kitty
 
+ovpn-install:
+	yay -S --noconfirm openvpn
+	yay -S --noconfirm networkmanager-openvpn
+
 neovim-install:
 	curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim-linux64.tar.gz
 	sudo rm -rf /opt/nvim
