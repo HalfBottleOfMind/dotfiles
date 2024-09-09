@@ -10,3 +10,5 @@ This is repo with my configs and some scripts to work with
     cd yay
     makepkg -si
     ```
+- Write and link .wakatime config
+- Install Mason packages

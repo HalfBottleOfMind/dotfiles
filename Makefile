@@ -20,6 +20,9 @@ neovim-install:
 	sudo tar -C /opt -xzf nvim-linux64.tar.gz
 	rm nvim-linux64.tar.gz
 
+waybar-install:
+	./scripts/waybar.sh
+
 tmux-install:
 	./scripts/tmux-install.sh
 
