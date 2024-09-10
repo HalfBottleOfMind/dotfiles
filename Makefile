@@ -80,3 +80,8 @@ omz-plugins:
 	curl -sSL https://storage.yandexcloud.net/yandexcloud-yc/install.sh | bash
 	git clone https://github.com/jimeh/tmuxifier.git ~/.tmuxifier
 
+docker-delete:
+	yay -R --noconfirm docker containerd runc
+
+docker-install:
+	yay -Sy --noconfirm docker
