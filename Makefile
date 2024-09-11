@@ -81,7 +81,17 @@ omz-plugins:
 	git clone https://github.com/jimeh/tmuxifier.git ~/.tmuxifier
 
 docker-delete:
-	yay -R --noconfirm docker containerd runc
+	yay -R --noconfirm docker containerd runc docker-compose
 
 docker-install:
-	yay -Sy --noconfirm docker
+	yay -Sy --noconfirm docker docker-compose docker-buildx
+	sudo systemctl enable docker
+	sudo systemctl start docker
+
+docker-group:
+	sudo groupadd docker | true
+	sudo usermod -aG docker ${USER}
+	newgrp docker
+
+psql-install:
+	yay -S postgresql-client

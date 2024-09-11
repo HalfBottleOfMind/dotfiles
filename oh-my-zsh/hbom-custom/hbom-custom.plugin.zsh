@@ -20,3 +20,7 @@ alias lsn='ls -1'     #A column contains name of files and directories
 
 # tmuxifier
 alias t='tmuxifier'
+
+# nvim
+alias n='nvim'
+alias DBUI='nvim +DBUI'
