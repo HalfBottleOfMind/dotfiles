@@ -20,4 +20,4 @@ opt.list = true
 opt.clipboard = 'unnamedplus'
 
 opt.laststatus = 3
-opt.winbar = '%=%m %f'
+opt.winbar = 'Codeium:%3{codeium#GetStatusString()}%=%m %f'
