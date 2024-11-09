@@ -147,7 +147,7 @@ export EDITOR=nvim
 export PATH=$PATH:/opt/nvim-linux64/bin
 export PATH=$PATH:/usr/local/go/bin
 export PATH=$PATH:/home/hbom/go/bin
-# export GOPATH="${HOME}/go"
+export GOPATH="${HOME}/dev"
 # export PATH="$GOPATH/bin"
 export PATH="${PATH}:${HOME}/.krew/bin"
 export PATH=$HOME/.local/bin:$PATH
@@ -175,3 +175,10 @@ eval "$(zoxide init zsh --cmd j)"
 # if command -v tmux &> /dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] && [[ ! "$TERM" =~ tmux ]] && [ -z "$TMUX" ]; then
 # 	exec tmux new-session -A -s default
 # fi
+
+# The next line updates PATH for CLI.
+if [ -f '/home/hbom/yandex-cloud/path.bash.inc' ]; then source '/home/hbom/yandex-cloud/path.bash.inc'; fi
+
+# The next line enables shell command completion for yc.
+if [ -f '/home/hbom/yandex-cloud/completion.zsh.inc' ]; then source '/home/hbom/yandex-cloud/completion.zsh.inc'; fi
+
