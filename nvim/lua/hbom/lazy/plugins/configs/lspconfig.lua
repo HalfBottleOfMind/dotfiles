@@ -12,6 +12,15 @@ config.gopls = {
 				unusedparams = true,
 			},
 			staticcheck = true,
+			hints = {
+				rangeVariableTypes = true,
+				parameterNames = true,
+				constantValues = true,
+				assignVariableTypes = true,
+				compositeLiteralFields = true,
+				compositeLiteralTypes = true,
+				functionTypeParameters = true,
+			},
 		},
 	},
 }
@@ -44,8 +53,6 @@ config.lua_ls = {
 
 config.intelephense = {}
 config.phpactor = {}
-
-config.clangd = {
-}
+config.clangd = {}
 
 return config
