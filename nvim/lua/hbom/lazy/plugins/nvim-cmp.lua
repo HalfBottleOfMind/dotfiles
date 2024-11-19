@@ -1,5 +1,6 @@
 return {
 	'hrsh7th/nvim-cmp',
+	enabled = true,
 	dependencies = {
 		'luckasRanarison/tailwind-tools.nvim',
 		'onsails/lspkind-nvim',

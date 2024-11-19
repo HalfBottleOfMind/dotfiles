@@ -147,7 +147,7 @@ export EDITOR=nvim
 export PATH=$PATH:/opt/nvim-linux64/bin
 export PATH=$PATH:/usr/local/go/bin
 export PATH=$PATH:/home/hbom/go/bin
-export GOPATH="${HOME}/dev"
+# export GOPATH="${HOME}/dev"
 # export PATH="$GOPATH/bin"
 export PATH="${PATH}:${HOME}/.krew/bin"
 export PATH=$HOME/.local/bin:$PATH
@@ -182,3 +182,13 @@ if [ -f '/home/hbom/yandex-cloud/path.bash.inc' ]; then source '/home/hbom/yande
 # The next line enables shell command completion for yc.
 if [ -f '/home/hbom/yandex-cloud/completion.zsh.inc' ]; then source '/home/hbom/yandex-cloud/completion.zsh.inc'; fi
 
+
+# fzf config
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+export FZF_DEFAULT_OPTS="--border --height 40% --tmux right,50% \
+	--color=bg+:#ccd0da,bg:#eff1f5,spinner:#dc8a78,hl:#d20f39 \
+	--color=fg:#4c4f69,header:#d20f39,info:#8839ef,pointer:#dc8a78 \
+	--color=marker:#7287fd,fg+:#4c4f69,prompt:#8839ef,hl+:#d20f39 \
+	--color=selected-bg:#bcc0cc
+"
+export PATH=$HOME/dev/git-fuzzy/bin:$PATH
