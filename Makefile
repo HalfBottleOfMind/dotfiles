@@ -8,6 +8,10 @@ link-hypr:
 	mv ~/.config/hypr ~/.config/hypr-backup
 	ln -s "$(shell pwd)/hypr" ~/.config/hypr
 
+link-sesh:
+	rm -rf ~/.config/sesh
+	ln -s "$(shell pwd)/sesh" ~/.config
+
 backup-kitty:
 	mv ~/.config/kitty ~/.config/kitty-backup
 

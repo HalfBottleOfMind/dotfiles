@@ -18,9 +18,10 @@ alias lrt='ls -1Fcrt'
 alias lsr='ls -lARFh' #Recursive list of files and directories
 alias lsn='ls -1'     #A column contains name of files and directories
 
-# tmuxifier
-alias t='tmuxifier'
+# tmux
+alias t='tmux'
 
 # nvim
 alias n='nvim'
-alias DBUI='nvim +DBUI'
+alias n.='nvim .'
+alias dbui='nvim +DBUI'
