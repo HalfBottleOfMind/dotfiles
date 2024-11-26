@@ -25,3 +25,6 @@ alias t='tmux'
 alias n='nvim'
 alias n.='nvim .'
 alias dbui='nvim +DBUI'
+
+# calcurse
+alias cc='calcurse'

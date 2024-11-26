@@ -14,10 +14,10 @@ source ~/.oh-my-zsh/catppuccin_latte-zsh-syntax-highlighting.zsh
 
 # Next variables only for typewritten theme
 ZSH_THEME="typewritten/typewritten"
-export TYPEWRITTEN_PROMPT_LAYOUT="pure_verbose"
+export TYPEWRITTEN_PROMPT_LAYOUT="singleline"
 export TYPEWRITTEN_SYMBOL="$"
 export TYPEWRITTEN_RELATIVE_PATH="adaptive"
-export TYPEWRITTEN_LEFT_PROMPT_PREFIX_FUNCTION=(date +%H:%M:%S)
+# export TYPEWRITTEN_LEFT_PROMPT_PREFIX_FUNCTION=(date +%H:%M:%S)
 export TYPEWRITTEN_CURSOR="terminal"
 
 # Set list of themes to pick from when loading at random
@@ -109,7 +109,7 @@ plugins=(
 	hbom-custom
 )
 
-RPS1='$(kubectx_prompt_info)'
+# RPS1='$(kubectx_prompt_info)'
 	
 source $ZSH/oh-my-zsh.sh
 # source <(werf completion --shell=zsh)
@@ -167,8 +167,8 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
 
 # tmuxifier
-export PATH="$HOME/.tmuxifier/bin:$PATH"
-eval "$(tmuxifier init -)"
+# export PATH="$HOME/.tmuxifier/bin:$PATH"
+# eval "$(tmuxifier init -)"
 
 eval "$(zoxide init zsh --cmd j)"
 
