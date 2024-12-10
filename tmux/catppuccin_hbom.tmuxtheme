@@ -2,7 +2,7 @@
 # WARNING: hex colors can't contain capital letters
 
 # --> Catppuccin (Pine)
-thm_bg="#eee9e6"
+thm_bg="#f2e9e1"
 thm_fg="#575279"
 thm_cyan="#04a5e5"
 thm_black="#f2e9de"
