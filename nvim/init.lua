@@ -1,11 +1,11 @@
-print("hello")
-
+-- Load plugins
 require("config.lazy")
 
-vim.keymap.set("n", "<space><space>x", "<cmd>source %<CR>")
-vim.keymap.set("n", "<space>x", ":.lua<CR>")
-vim.keymap.set("v", "<space>x", ":lua<CR>")
+-- Load custom config
+require("config.mappings")
+require("config.opts")
 
+-- TODO: move somewhere
 -- Highlight when yanking (copying) text
 vim.api.nvim_create_autocmd('TextYankPost', {
 	desc = 'Highlight when yanking (copying) text',
