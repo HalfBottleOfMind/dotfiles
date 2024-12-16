@@ -1,5 +1,5 @@
 return {
-	'folke/which-key.nvim',
-	opts = {},
-	event = 'VeryLazy',
+  'folke/which-key.nvim',
+  opts = {},
+  event = 'VeryLazy',
 }
