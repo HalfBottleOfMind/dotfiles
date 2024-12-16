@@ -18,3 +18,6 @@ set.clipboard = 'unnamedplus'
 
 -- make single status bar
 set.laststatus = 3
+
+-- Codeium
+-- vim.cmd [[ set statusline+=%3{v:lua.require('codeium.virtual_text').status_string()} ]]
