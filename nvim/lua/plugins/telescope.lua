@@ -11,6 +11,15 @@ return {
         find_files = {
           theme = 'ivy',
         },
+        buffers = {
+          theme = 'dropdown',
+          previewer = false,
+          mappings = {
+            i = {
+              ['<C-d>'] = require('telescope.actions').delete_buffer,
+            },
+          },
+        }
       },
       extensions = {
         fzf = {},

@@ -30,3 +30,12 @@ vim.keymap.set('n', '<leader>t', function()
   vim.cmd.wincmd('J')
   vim.api.nvim_win_set_height(0, 10)
 end, { desc = 'Open new terminal in horizontal split' })
+
+-- Gitsigns
+vim.keymap.set('n', '<leader>hs', require 'gitsigns'.stage_hunk, { desc = 'Stage hunk' })
+vim.keymap.set('n', '<leader>hr', require 'gitsigns'.reset_hunk, { desc = 'Reset hunk' })
+vim.keymap.set('n', '<leader>hS', require 'gitsigns'.stage_buffer, { desc = 'Stage buffer' })
+vim.keymap.set('n', '<leader>hR', require 'gitsigns'.reset_buffer, { desc = 'Reset buffer' })
+vim.keymap.set('n', '<leader>hp', require 'gitsigns'.preview_hunk, { desc = 'Preview hunk' })
+vim.keymap.set('n', '<leader>hd', require 'gitsigns'.diffthis, { desc = 'Diff' })
+vim.keymap.set('n', '<leader>hD', function() require 'gitsigns'.diffthis('~') end, { desc = 'Diff' })
