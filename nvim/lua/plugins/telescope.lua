@@ -12,6 +12,11 @@ return {
           theme = 'ivy',
         },
       },
+      extensions = {
+        fzf = {},
+      },
     }
+
+    require('telescope').load_extension('fzf')
   end
 }
