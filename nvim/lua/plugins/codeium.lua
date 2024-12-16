@@ -1,9 +1,22 @@
 return {
-  "Exafunction/codeium.nvim",
+  'Exafunction/codeium.nvim',
   dependencies = {
-    "nvim-lua/plenary.nvim",
-    "hrsh7th/nvim-cmp",
+    'nvim-lua/plenary.nvim',
+    'hrsh7th/nvim-cmp',
   },
-  event = 'BufEnter',
-  opts = {}
+  opts = {
+    enable_cmp_source = false,
+    virtual_text = {
+      enabled = true,
+      map_keys = true,
+      key_bindings = {
+        accept = '<M-a>',
+        accept_word = '<M-w>',
+        accept_line = '<M-l>',
+        next = '<M-]>',
+        prev = '<M-[>',
+        clear = false,
+      }
+    }
+  }
 }

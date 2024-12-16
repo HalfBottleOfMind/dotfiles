@@ -5,11 +5,16 @@ return {
       'folke/lazydev.nvim',
       ft = 'lua',
       opts = { library = { { path = '${3rd}/luv/library', words = { 'vim%.uv' } } } },
-    }
+    },
+    'hrsh7th/cmp-nvim-lsp',
   },
   config = function()
+    local default = require 'cmp_nvim_lsp'.default_capabilities()
+
     -- Lua
-    require 'lspconfig'.lua_ls.setup {}
+    require 'lspconfig'.lua_ls.setup {
+      capabilities = default
+    }
 
     vim.api.nvim_create_autocmd('LspAttach', {
       callback = function(args)
