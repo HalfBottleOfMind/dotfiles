@@ -154,7 +154,7 @@ export PATH=$HOME/.local/bin:$PATH
 #export BROWSER=wslview
 
 # Brew
-eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+# eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 # Thefuck
 # eval $(thefuck --alias)
 
@@ -163,8 +163,9 @@ eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 # ! { which werf | grep -qsE "^/home/hbom/.trdl/"; } && [[ -x "$HOME/bin/trdl" ]] && source $("$HOME/bin/trdl" use werf "1.2" "stable")
 # ! { which werf | grep -qsE "^/home/hbom/.trdl/"; } && [[ -x "$HOME/bin/trdl" ]] && source $("$HOME/bin/trdl" use werf "1.1" "stable")
 
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+# NVM
+# export NVM_DIR="$HOME/.nvm"
+# [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
 
 # tmuxifier
 # export PATH="$HOME/.tmuxifier/bin:$PATH"
@@ -176,11 +177,11 @@ eval "$(zoxide init zsh --cmd j)"
 # 	exec tmux new-session -A -s default
 # fi
 
-# The next line updates PATH for CLI.
-if [ -f '/home/hbom/yandex-cloud/path.bash.inc' ]; then source '/home/hbom/yandex-cloud/path.bash.inc'; fi
-
-# The next line enables shell command completion for yc.
-if [ -f '/home/hbom/yandex-cloud/completion.zsh.inc' ]; then source '/home/hbom/yandex-cloud/completion.zsh.inc'; fi
+# # The next line updates PATH for CLI.
+# if [ -f '/home/hbom/yandex-cloud/path.bash.inc' ]; then source '/home/hbom/yandex-cloud/path.bash.inc'; fi
+#
+# # The next line enables shell command completion for yc.
+# if [ -f '/home/hbom/yandex-cloud/completion.zsh.inc' ]; then source '/home/hbom/yandex-cloud/completion.zsh.inc'; fi
 
 
 # fzf config

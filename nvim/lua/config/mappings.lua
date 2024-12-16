@@ -23,5 +23,10 @@ vim.keymap.set('n', '<M-j>', ':cnext<CR>')
 vim.keymap.set('n', '<M-k>', ':cprev<CR>')
 
 -- Terminal
-vim.keymap.set('n', '<leader>tv', ':vert term<CR>', { desc = 'Open new terminal in vertical split' })
-vim.keymap.set('n', '<leader>ts', ':hor term<CR>', { desc = 'Open new terminal in horizontal split' })
+vim.keymap.set('t', '<ESC>', '<C-\\><C-n>')
+vim.keymap.set('n', '<leader>t', function()
+  vim.cmd.vnew()
+  vim.cmd.term()
+  vim.cmd.wincmd('J')
+  vim.api.nvim_win_set_height(0, 10)
+end, { desc = 'Open new terminal in horizontal split' })
