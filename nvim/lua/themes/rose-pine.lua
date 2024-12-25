@@ -4,19 +4,24 @@ return {
   name = 'rose-pine',
   config = function()
     local config = {
+      enable = {
+        terminal = false,
+      },
       variant = 'dawn',
       dark_variant = 'dawn',
+      -- dim_inactive_windows = true,
+      -- extend_background_behind_borders = true,
       styles = {
         bold = true,
         italic = true,
         transparency = true,
       },
       highlight_groups = {
-        -- NOTE: folke/todo-comments.nvim
+        -- folke/todo-comments.nvim
         TodoBgTodo = { bg = 'foam', fg = 'base', bold = true },
         TodoFgTodo = { fg = 'text' },
-        TodoBgFix = { bg = 'love', fg = 'base', bold = true },
-        TodoFgFix = { fg = 'text' },
+        TodoBgFix  = { bg = 'love', fg = 'base', bold = true },
+        TodoFgFix  = { fg = 'text' },
         TodoBgHack = { bg = 'gold', fg = 'base', bold = true },
         TodoFgHack = { fg = 'text' },
         TodoBgNote = { bg = 'foam', fg = 'base', bold = true },
@@ -27,6 +32,11 @@ return {
         TodoFgPerf = { fg = 'text' },
         TodoBgTest = { bg = 'pine', fg = 'base', bold = true },
         TodoFgTest = { fg = 'text' },
+
+        -- floating windows
+        -- TODO:
+        -- FloatBorder = { bg = 'base', fg = 'text' },
+        -- NormalFloat = { bg = 'base', fg = 'text' },
       },
     }
 
