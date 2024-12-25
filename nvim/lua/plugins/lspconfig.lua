@@ -6,15 +6,19 @@ return {
       ft = 'lua',
       opts = { library = { { path = '${3rd}/luv/library', words = { 'vim%.uv' } } } },
     },
-    'hrsh7th/cmp-nvim-lsp',
+    'saghen/blink.cmp',
   },
-  config = function()
-    local default = require 'cmp_nvim_lsp'.default_capabilities()
-
-    -- Lua
-    require 'lspconfig'.lua_ls.setup {
-      capabilities = default
-    }
+  opts = {
+    servers = {
+      lua_ls = {},
+    },
+  },
+  config = function(_, opts)
+    local lspconfig = require('lspconfig')
+    for server, config in pairs(opts.servers) do
+      config.capabilities = require('blink.cmp').get_lsp_capabilities(config.capabilities)
+      lspconfig[server].setup(config)
+    end
 
     vim.api.nvim_create_autocmd('LspAttach', {
       callback = function(args)

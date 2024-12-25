@@ -1,8 +1,9 @@
 return {
   'Exafunction/codeium.nvim',
+  enabled = true,
   dependencies = {
     'nvim-lua/plenary.nvim',
-    'hrsh7th/nvim-cmp',
+    -- 'hrsh7th/nvim-cmp',
   },
   opts = {
     enable_cmp_source = false,
