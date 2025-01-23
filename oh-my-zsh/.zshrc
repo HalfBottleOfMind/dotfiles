@@ -10,7 +10,7 @@ export ZSH="$HOME/.oh-my-zsh"
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 #ZSH_THEME="robbyrussell"
 # ZSH_THEME="hbom-custom"
-source ~/.oh-my-zsh/catppuccin_latte-zsh-syntax-highlighting.zsh
+# source ~/.oh-my-zsh/catppuccin_latte-zsh-syntax-highlighting.zsh
 
 # Next variables only for typewritten theme
 ZSH_THEME="typewritten/typewritten"
@@ -19,6 +19,10 @@ export TYPEWRITTEN_SYMBOL="$"
 export TYPEWRITTEN_RELATIVE_PATH="adaptive"
 # export TYPEWRITTEN_LEFT_PROMPT_PREFIX_FUNCTION=(date +%H:%M:%S)
 export TYPEWRITTEN_CURSOR="terminal"
+
+export ZSH_TMUX_AUTOSTART=false
+export ZSH_TMUX_AUTOQUIT=false
+export ZSH_TMUX_AUTONAME_SESSION=true
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -104,7 +108,7 @@ plugins=(
 	# kubectl
 	# kubectx
 	tmux
-	zsh-syntax-highlighting
+	# zsh-syntax-highlighting
 
 	hbom-custom
 )
@@ -147,6 +151,7 @@ export EDITOR=nvim
 export PATH=$PATH:/opt/nvim-linux64/bin
 export PATH=$PATH:/usr/local/go/bin
 export PATH=$PATH:/home/hbom/go/bin
+export PATH=$PATH:/Users/hbom/go/bin
 # export GOPATH="${HOME}/dev"
 # export PATH="$GOPATH/bin"
 export PATH="${PATH}:${HOME}/.krew/bin"
@@ -154,9 +159,8 @@ export PATH=$HOME/.local/bin:$PATH
 #export BROWSER=wslview
 
 # Brew
-eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
-# Thefuck
-# eval $(thefuck --alias)
+# eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+eval "$(/opt/homebrew/bin/brew shellenv)"
 
 # cd ~
 # [[ "$PATH" == *"$HOME/bin:"* ]] || export PATH="$HOME/bin:$PATH"
@@ -171,10 +175,6 @@ export NVM_DIR="$HOME/.nvm"
 # eval "$(tmuxifier init -)"
 
 eval "$(zoxide init zsh --cmd j)"
-
-# if command -v tmux &> /dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] && [[ ! "$TERM" =~ tmux ]] && [ -z "$TMUX" ]; then
-# 	exec tmux new-session -A -s default
-# fi
 
 # The next line updates PATH for CLI.
 if [ -f '/home/hbom/yandex-cloud/path.bash.inc' ]; then source '/home/hbom/yandex-cloud/path.bash.inc'; fi
@@ -213,3 +213,4 @@ bindkey -M vicmd '\es' sesh-sessions
 bindkey -M viins '\es' sesh-sessions
 
 export GPG_TTY=$(tty)
+source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
