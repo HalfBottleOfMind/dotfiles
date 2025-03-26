@@ -1,3 +1,4 @@
+-- TODO: присмотреться
 return {
 	'vim-test/vim-test',
 	dependencies = {

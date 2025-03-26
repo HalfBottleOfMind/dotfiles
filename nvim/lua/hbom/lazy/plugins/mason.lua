@@ -1,3 +1,4 @@
+-- TODO: присмотреться
 return {
 	'williamboman/mason.nvim',
 	opts = {

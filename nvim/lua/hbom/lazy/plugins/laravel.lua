@@ -1,3 +1,4 @@
+-- TODO: присмотреться
 return {
 	'adalessa/laravel.nvim',
 	enabled = false,

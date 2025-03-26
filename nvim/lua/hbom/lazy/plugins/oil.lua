@@ -1,3 +1,4 @@
+-- TODO: настроить маппинги
 return {
 	'stevearc/oil.nvim',
 	dependencies = {

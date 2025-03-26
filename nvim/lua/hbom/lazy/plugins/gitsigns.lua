@@ -1,3 +1,5 @@
+-- TODO: присмотреться
+-- TODO: настроить маппинги
 return {
 	'lewis6991/gitsigns.nvim',
 	config = function()

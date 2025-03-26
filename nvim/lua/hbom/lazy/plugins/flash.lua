@@ -1,3 +1,4 @@
+-- TODO: присмотреться
 return {
 	'folke/flash.nvim',
 	enabled = true,

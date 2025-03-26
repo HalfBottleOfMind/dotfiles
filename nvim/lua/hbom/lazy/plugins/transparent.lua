@@ -1,3 +1,4 @@
+-- TODO: присмотреться
 return {
 	'xiyaowong/transparent.nvim',
 	config = function()

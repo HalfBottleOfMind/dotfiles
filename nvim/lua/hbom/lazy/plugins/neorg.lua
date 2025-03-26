@@ -1,3 +1,4 @@
+-- TODO: присмотреться
 return {
 	'nvim-neorg/neorg',
 	enabled = true,

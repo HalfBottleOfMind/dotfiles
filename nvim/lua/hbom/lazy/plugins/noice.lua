@@ -1,3 +1,4 @@
+-- TODO: присмотреться
 return {
 	'folke/noice.nvim',
 	enabled = true,

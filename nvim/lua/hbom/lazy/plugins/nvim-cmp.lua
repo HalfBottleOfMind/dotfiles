@@ -1,3 +1,4 @@
+-- TODO: присмотреться
 return {
 	'hrsh7th/nvim-cmp',
 	enabled = true,

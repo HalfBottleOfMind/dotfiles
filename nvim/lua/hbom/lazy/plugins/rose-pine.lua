@@ -1,3 +1,4 @@
+-- TODO: попробовать сделать свою тему
 return {
 	'rose-pine/neovim',
 	enabled = true,

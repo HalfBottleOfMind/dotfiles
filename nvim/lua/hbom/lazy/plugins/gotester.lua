@@ -1,3 +1,4 @@
+-- TODO: присмотреться
 return {
 	'HalfBottleOfMind/gotester.nvim',
 	dependencies = {

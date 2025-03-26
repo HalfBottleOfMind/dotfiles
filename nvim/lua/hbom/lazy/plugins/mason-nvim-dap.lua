@@ -1,3 +1,4 @@
+-- TODO: присмотреться
 return {
 	'jay-babu/mason-nvim-dap.nvim',
 	event = 'VeryLazy',

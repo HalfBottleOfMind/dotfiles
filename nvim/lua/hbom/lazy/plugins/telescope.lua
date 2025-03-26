@@ -1,3 +1,5 @@
+-- TODO: присмотреться
+-- TODO: настроить маппинги
 return {
 	"nvim-telescope/telescope.nvim",
 	dependencies = {
