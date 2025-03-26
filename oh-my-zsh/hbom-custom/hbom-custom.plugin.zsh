@@ -26,5 +26,11 @@ alias n='nvim'
 alias n.='nvim .'
 alias dbui='nvim +DBUI'
 
-# calcurse
-alias cc='calcurse'
+# hledger
+alias h='hledger'
+alias hr='hledger reg'
+alias hw='hledger web'
+alias ha='hledger add'
+
+# lazygit
+alias lg='lazygit'
