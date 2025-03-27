@@ -12,3 +12,9 @@ This is repo with my configs and some scripts to work with
     ```
 - Write and link .wakatime config
 - Install Mason packages
+
+```
+echo hello
+sleep 5
+echo world
+```
