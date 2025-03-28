@@ -10,7 +10,6 @@ return {
       enabled = true,
       key_bindings = {
         accept = "<C-y>",
-        accept_word = "<C-w>",
         accept_line = "<C-l>",
         next = "<C-n>",
         prev = "<C-p>",
