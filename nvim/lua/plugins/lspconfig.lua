@@ -11,6 +11,7 @@ return {
   opts = {
     servers = {
       lua_ls = {},
+      phpactor = {},
       gopls = {
         settings = {
           gopls = {
@@ -54,6 +55,12 @@ return {
               vim.lsp.buf.format({ bufnr = args.buf, id = client.id })
             end
           })
+
+          vim.keymap.set('n', 'gd', vim.lsp.buf.definition)
+          vim.keymap.set('n', 'gD', vim.lsp.buf.declaration)
+          vim.keymap.set('n', 'gf', function()
+            vim.lsp.buf.format { async = true }
+          end)
         end
       end
     })
