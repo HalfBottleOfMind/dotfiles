@@ -1,5 +1,6 @@
 alias hmm='h-m-m'
 alias lg='lazygit'
+alias h='hledger'
 
 # Laravel artisan
 alias pa='php artisan'

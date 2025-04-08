@@ -167,8 +167,12 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 # ! { which werf | grep -qsE "^/home/hbom/.trdl/"; } && [[ -x "$HOME/bin/trdl" ]] && source $("$HOME/bin/trdl" use werf "1.2" "stable")
 # ! { which werf | grep -qsE "^/home/hbom/.trdl/"; } && [[ -x "$HOME/bin/trdl" ]] && source $("$HOME/bin/trdl" use werf "1.1" "stable")
 
+# export NVM_DIR="$HOME/.nvm"
+# [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+
 export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+[ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
+[ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
 
 # tmuxifier
 # export PATH="$HOME/.tmuxifier/bin:$PATH"
@@ -214,3 +218,16 @@ bindkey -M viins '\es' sesh-sessions
 
 export GPG_TTY=$(tty)
 source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+export PATH="/Users/hbom/.config/herd-lite/bin:$PATH"
+export PHP_INI_SCAN_DIR="/Users/hbom/.config/herd-lite/bin:$PHP_INI_SCAN_DIR"
+
+
+# Herd injected PHP 8.4 configuration.
+export HERD_PHP_84_INI_SCAN_DIR="/Users/hbom/Library/Application Support/Herd/config/php/84/"
+
+
+# Herd injected PHP binary.
+export PATH="/Users/hbom/Library/Application Support/Herd/bin/":$PATH
+
+# GPG for signing commits
+export GPG_TTY=$(tty)
