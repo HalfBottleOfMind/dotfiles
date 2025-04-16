@@ -47,6 +47,8 @@ return {
         local client = vim.lsp.get_client_by_id(args.data.client_id)
         if not client then return end
 
+        keymapOpts = { buffer = args.buf }
+
         if client:supports_method('textDocument/formatting', 0) then
           -- Format the current buffer on save
           vim.api.nvim_create_autocmd('BufWritePre', {
@@ -56,12 +58,12 @@ return {
             end
           })
 
-          vim.keymap.set('n', 'gd', vim.lsp.buf.definition)
-          vim.keymap.set('n', 'gD', vim.lsp.buf.declaration)
-          vim.keymap.set('n', 'gf', function()
+          vim.keymap.set('n', 'grf', function()
             vim.lsp.buf.format { async = true }
-          end)
+          end, keymapOpts)
         end
+
+        vim.keymap.set('n', 'grd', vim.lsp.buf.definition, keymapOpts)
       end
     })
   end,
