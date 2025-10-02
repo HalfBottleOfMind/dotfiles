@@ -36,3 +36,6 @@ alias ha='hledger add'
 
 # lazygit
 alias lg='lazygit'
+
+# git
+alias gcm='git commit -m'
