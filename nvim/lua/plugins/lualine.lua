@@ -20,7 +20,7 @@ return {
   config = function()
     require('lualine').setup {
       options = {
-        theme = 'rose-pine',
+        -- theme = 'rose-pine',
       },
       sections = {
         lualine_x = { codeium, 'encoding', 'fileformat', 'filetype' },

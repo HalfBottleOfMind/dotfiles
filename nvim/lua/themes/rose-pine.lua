@@ -1,6 +1,6 @@
 return {
   "rose-pine/neovim",
-  enabled = true,
+  enabled = false,
   name = "rose-pine",
   config = function()
     local config = {

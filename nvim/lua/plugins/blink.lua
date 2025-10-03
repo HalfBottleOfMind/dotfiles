@@ -1,19 +1,26 @@
 return {
   'saghen/blink.cmp',
   enabled = true,
-  -- TODO: check this and find out if I need it
-  -- dependencies = 'rafamadriz/friendly-snippets',
   version = '1.*',
+  --- @module 'blink.cmp'
+  --- @type blink.cmp.Config
   opts = {
     keymap = {
-      preset = 'none',
-      ["<Up>"] = { "select_prev", "fallback" },
-      ["<Down>"] = { "select_next", "fallback" },
-      ["<CR>"] = { "accept", "fallback" },
+      preset = 'default',
     },
     appearance = {
-      use_nvim_cmp_as_default = true,
       nerd_font_variant = 'mono'
+    },
+    completion = {
+      documentation = {
+        auto_show = true,
+      },
+    },
+    signature = {
+      enabled = true,
+      window = {
+        show_documentation = true,
+      },
     },
     sources = {
       default = { 'lsp', 'path', 'snippets', 'buffer' },
