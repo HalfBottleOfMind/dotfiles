@@ -1,4 +1,4 @@
 return {
   "fatih/vim-go",
-  enabled = true,
+  enabled = false,
 }

@@ -1,5 +1,6 @@
 return {
   "folke/trouble.nvim",
+  enabled = false,
   dependencies = { "nvim-tree/nvim-web-devicons" },
   cmd = 'Trouble',
   opts = {},
@@ -29,9 +30,9 @@ return {
       "<cmd>Trouble loclist toggle<cr>",
       desc = "Location List (Trouble)",
     },
-   {
+    {
       "<leader>dQ",
-     "<cmd>Trouble qflist toggle<cr>",
+      "<cmd>Trouble qflist toggle<cr>",
       desc = "Quickfix List (Trouble)",
     },
   },

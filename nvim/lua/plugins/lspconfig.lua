@@ -1,5 +1,6 @@
 return {
   'neovim/nvim-lspconfig',
+  enabled = true,
   dependencies = {
     {
       'folke/lazydev.nvim',
@@ -36,10 +37,9 @@ return {
     },
   },
   config = function(_, opts)
-    local lspconfig = require('lspconfig')
     for server, config in pairs(opts.servers) do
       config.capabilities = require('blink.cmp').get_lsp_capabilities(config.capabilities)
-      lspconfig[server].setup(config)
+      vim.lsp.enable(server)
     end
 
     vim.api.nvim_create_autocmd('LspAttach', {
