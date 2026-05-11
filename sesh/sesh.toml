@@ -1,1 +1,47 @@
-[default_session]
+[[session]]
+name = "home"
+path = "~"
+
+[[session]]
+name = "rombica"
+path = "~"
+
+[[session]]
+name = "finances"
+path = "~/dev/finances/"
+
+[[session]]
+name = "sesh"
+path = "~/.config/sesh"
+startup_command = "n sesh.toml"
+
+[[session]]
+name = "dotfiles"
+path = "~/dev/dotfiles"
+startup_command = "n."
+
+[[session]]
+name = "Local docker"
+path = "~/dev/local-docker"
+
+# Burger King start
+[[session]]
+name = "BK Go backend"
+path = "~/dev/bk/kiosk-go"
+
+[[session]]
+name = "BK PHP backend"
+path = "~/dev/bk/kiosk-backend"
+
+[[session]]
+name = "BK Local kiosk soft"
+path = "~/dev/bk/local-kiosk-soft"
+# Burger King end
+
+[[session]]
+name = "Tru Shokolad"
+path = "~/dev/trushokolad-admin"
+
+[[session]]
+name = "Response League"
+path = "~/dev/mahach"

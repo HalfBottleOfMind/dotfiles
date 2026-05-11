@@ -208,6 +208,14 @@ function sesh-sessions() {
 }
 
 zle     -N             sesh-sessions
-bindkey -M emacs '\es' sesh-sessions
-bindkey -M vicmd '\es' sesh-sessions
-bindkey -M viins '\es' sesh-sessions
+bindkey -M emacs '^b' sesh-sessions
+bindkey -M vicmd '^b' sesh-sessions
+bindkey -M viins '^b' sesh-sessions
+
+export GPG_TTY=$(tty)
+
+# The next line updates PATH for src CLI.
+if [ -f '/home/hbom/sourcecraft/path.bash.inc' ]; then source '/home/hbom/sourcecraft/path.bash.inc'; fi
+
+# The next line enables shell command completion for src.
+if [ -f '/home/hbom/sourcecraft/completion.zsh.inc' ]; then source '/home/hbom/sourcecraft/completion.zsh.inc'; fi

@@ -1,1 +1,6 @@
-require('hbom.lazy')
+require('hbom.pack.oil')
+-- require('hbom.pack.catppuccin')
+require('hbom.pack.rose-pine')
+require('hbom.pack.lsp')
+require('hbom.pack.blink')
+require('hbom.pack.which-key')
