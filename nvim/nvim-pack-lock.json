@@ -21,6 +21,10 @@
       "rev": "cbc7b02bb99fae35cb42f514762b89b5126651ef",
       "src": "https://github.com/hrsh7th/cmp-nvim-lsp"
     },
+    "fzf-lua": {
+      "rev": "44816af2465bb0a17ae0f1f2d8a4f9c3df524fcd",
+      "src": "https://github.com/ibhagwan/fzf-lua"
+    },
     "nvim-cmp": {
       "rev": "a1d504892f2bc56c2e79b65c6faded2fd21f3eca",
       "src": "https://github.com/hrsh7th/nvim-cmp"
