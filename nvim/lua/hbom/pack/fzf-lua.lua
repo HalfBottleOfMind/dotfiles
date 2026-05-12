@@ -11,7 +11,6 @@ fzf.setup({
 	},
 	previewers = {
 		bat = {
-			cmd = 'batcat',
 			args = '--color=always --style=numbers,changes --theme=ansi',
 		},
 	},
